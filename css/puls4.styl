@@ -1,7 +1,9 @@
 azul = #22BCE0
 gris_oscuro = #444
+naranja = #DD4F24
+
 body
-	background #E8E8E8
+	backgroun #E8E8E8
 	color gris_oscuro
 	font-family Arial
 	font-size 16px
@@ -10,6 +12,7 @@ header
 	background gris_oscuro
 	color white
 	padding 0.5em
+	position relative
 
 	.logo
 		border-right 1px solid azul
@@ -20,6 +23,25 @@ header
 
 	.titular
 		margin 0 80px 0 70px
+
+		.filtro
+			color azul
+			font-size 14px
+			font-style italic
+			font weight bold
+			font-decoration none
+
+		.publicar
+			background naranja
+			color white
+			float right
+			font-style italic
+			padding 0.2em 0.5em
+			text-decoration none
+			text-shadow 1px 1px 0px black
+
+
+
 		.titulo
 			font-size 18px
 			font-weight normal
@@ -27,6 +49,10 @@ header
 			padding 0
 
 	.usuario
+		position absolute
+		right 10px
+		top 10px
+
 		.avatar
 			img
 				border-radius 50%
